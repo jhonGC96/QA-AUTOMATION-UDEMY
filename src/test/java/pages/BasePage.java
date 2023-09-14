@@ -36,7 +36,6 @@ public class BasePage {
         String nombre = faker.name().firstName();
         return nombre;
     }
-    
 
     //To naviate to any URL
     public static void navigateTo(String url){
