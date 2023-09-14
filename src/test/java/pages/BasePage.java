@@ -44,7 +44,7 @@ public class BasePage {
 
     //To clic in a link
     public void goToLinkText(String linkText){
-        driver.findElement(By.linkText(linkText)).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(linkText))).click();
     }
 
     public static void closeBrowser (){

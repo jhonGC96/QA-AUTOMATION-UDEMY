@@ -1,6 +1,6 @@
 @Amazon
 Feature: Testing amazon case
-    Scenario Outline: Scenario Outline name: As a customer when i search for Alexa i want to see if the third option on the second page is available to purchase and cand be added to the car
+    Scenario Outline: As a customer when i search for Alexa i want to see if the third option on the second page is available to purchase and cand be added to the cart
         Given than a user i navigate to amazon
         And i search for <product>
         When navigate to the second page
