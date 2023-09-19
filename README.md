@@ -23,11 +23,15 @@ Excersices with Gradle, Selenium, Cucumber and Java.
 5.- Table: Validate a static table
 
 ----- How to execute -------
-Amazon.- use the tag '@Amazon'
-BuggyCars.- all case use '@Buggy'
-Google.- use the tag '@Google'
-Sandbox.- use the tag '@Sandbox'
-Table.- @Table
+Amazon.- use the tag '@Amazon'.
+
+BuggyCars.- all case use '@Buggy'.
+
+Google.- use the tag '@Google'.
+
+Sandbox.- use the tag '@Sandbox'.
+
+Table.- @Table.
 
 ---- Example ----
 
