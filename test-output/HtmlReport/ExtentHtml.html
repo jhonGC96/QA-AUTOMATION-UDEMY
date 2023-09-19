@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>sep. 14, 2023 05:03:23 p. m.</span>
+			<span class='label blue darken-3 suite-start-time'>sep. 19, 2023 03:15:46 p. m.</span>
 			</a>
 		</ul>
 	</div>
@@ -137,7 +137,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>5</span> scenarios passed</span>
+                    <span class='strong'>8</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -157,7 +157,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>29</span> steps passed</span>
+                    <span class='strong'>50</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -187,7 +187,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>BuggyCars</span>
-						<span class='test-time'>sep. 14, 2023 05:03:24 p. m.</span>
+						<span class='test-time'>sep. 19, 2023 03:15:46 p. m.</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -203,7 +203,7 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 12.017</span>
+	<span class='duration right label'>00 00 11.856</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: As a user i try to register in buggycars</div>
 	</div>
@@ -306,7 +306,7 @@
 </div>
 <div class='scenario outline node' test-id='24' status='pass'>
 
-	<span class='duration right label'>00 00 15.430</span>
+	<span class='duration right label'>00 00 16.517</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: As a user i want to update the user profile</div>
 	</div>
@@ -393,6 +393,133 @@
 		</li>
 	</ul>
 </div>
+<div class='scenario outline node' test-id='43' status='pass'>
+
+	<span class='duration right label'>00 00 52.496</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: As i user i want to vote for the most popular model car</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>user</td><td>pass</td><td>car</td></tr><tr><td>Yanira</td><td>Prueba1.</td><td>Guilia Quadrifoglio</td></tr><tr><td>Ward</td><td>Prueba1.</td><td>Mito</td></tr><tr><td>Lorilee</td><td>Prueba1.</td><td>Giulietta</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='44' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>As i user i want to vote for the most popular model car</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Buggy</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='45' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.navigateToBuggy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given that the user navigate to buggycars</h6>
+
+				</li>
+				<li test-id='46' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.fillFormLogin2(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user fills the credentials form with username Yanira and password Prueba1.</h6>
+
+				</li>
+				<li test-id='47' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clicLoginButton2()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user goes to click in login button</h6>
+
+				</li>
+				<li test-id='48' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clickToPopularMake()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on 'Popular make' option</h6>
+
+				</li>
+				<li test-id='49' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clickCar(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the car Guilia Quadrifoglio they like the most</h6>
+
+				</li>
+				<li test-id='50' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clickVote()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on button vote!</h6>
+
+				</li>
+				<li test-id='51' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.checkVote()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user can see the message 'Thank you for your vote!'</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='53' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>As i user i want to vote for the most popular model car</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Buggy</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='54' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.navigateToBuggy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given that the user navigate to buggycars</h6>
+
+				</li>
+				<li test-id='55' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.fillFormLogin2(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user fills the credentials form with username Ward and password Prueba1.</h6>
+
+				</li>
+				<li test-id='56' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clicLoginButton2()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user goes to click in login button</h6>
+
+				</li>
+				<li test-id='57' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clickToPopularMake()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on 'Popular make' option</h6>
+
+				</li>
+				<li test-id='58' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clickCar(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the car Mito they like the most</h6>
+
+				</li>
+				<li test-id='59' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clickVote()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on button vote!</h6>
+
+				</li>
+				<li test-id='60' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.checkVote()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user can see the message 'Thank you for your vote!'</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='62' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>As i user i want to vote for the most popular model car</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Buggy</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='63' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.navigateToBuggy()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given that the user navigate to buggycars</h6>
+
+				</li>
+				<li test-id='64' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.fillFormLogin2(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user fills the credentials form with username Lorilee and password Prueba1.</h6>
+
+				</li>
+				<li test-id='65' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clicLoginButton2()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user goes to click in login button</h6>
+
+				</li>
+				<li test-id='66' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clickToPopularMake()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on 'Popular make' option</h6>
+
+				</li>
+				<li test-id='67' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clickCar(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on the car Giulietta they like the most</h6>
+
+				</li>
+				<li test-id='68' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.clickVote()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on button vote!</h6>
+
+				</li>
+				<li test-id='69' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="steps.BuggySteps.checkVote()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user can see the message 'Thank you for your vote!'</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
 					</div>
 				</li>
 			</ul>
@@ -439,12 +566,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>@Buggy</span>
 						<span class='category-status right'>
-						<span class='label pass'>5</span>
+						<span class='label pass'>8</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 5</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 8</span>
 							
 							
 						</div>
@@ -459,28 +586,43 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>sep. 14, 2023 05:03:24 p. m.</td>
+										<td>sep. 19, 2023 03:15:46 p. m.</td>
 										<td class='linked' test-id='3'>As a user i try to register in buggycars</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>sep. 14, 2023 05:03:29 p. m.</td>
+										<td>sep. 19, 2023 03:15:52 p. m.</td>
 										<td class='linked' test-id='10'>As a user i try to register in buggycars</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>sep. 14, 2023 05:03:32 p. m.</td>
+										<td>sep. 19, 2023 03:15:55 p. m.</td>
 										<td class='linked' test-id='17'>As a user i try to register in buggycars</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>sep. 14, 2023 05:03:36 p. m.</td>
+										<td>sep. 19, 2023 03:15:58 p. m.</td>
 										<td class='linked' test-id='25'>As a user i want to update the user profile</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>sep. 14, 2023 05:03:43 p. m.</td>
+										<td>sep. 19, 2023 03:16:06 p. m.</td>
 										<td class='linked' test-id='34'>As a user i want to update the user profile</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>sep. 19, 2023 03:16:15 p. m.</td>
+										<td class='linked' test-id='44'>As i user i want to vote for the most popular model car</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>sep. 19, 2023 03:16:33 p. m.</td>
+										<td class='linked' test-id='53'>As i user i want to vote for the most popular model car</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>sep. 19, 2023 03:16:50 p. m.</td>
+										<td class='linked' test-id='62'>As i user i want to vote for the most popular model car</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -511,31 +653,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>29</div>
+					<div class='panel-lead'>50</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>sep. 14, 2023 05:03:23 p. m.</div>
+					<div class='panel-lead'>sep. 19, 2023 03:15:46 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>sep. 14, 2023 05:03:51 p. m.</div>
+			 		<div class='panel-lead'>sep. 19, 2023 03:17:07 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 27.699</div>
+					<div class='panel-lead'>00 01 21.151</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -552,7 +694,7 @@
 						</tr>
 						<tr>
 							<td>@Buggy</td>
-							<td>5</td>
+							<td>8</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -577,16 +719,16 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 5,
-				passChild: 5,
+				childCount: 8,
+				passChild: 8,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 29,
-				passGrandChild: 29,
+				grandChildCount: 50,
+				passGrandChild: 50,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -598,7 +740,7 @@
 		
 		<script>
 			var timeline = {
-			        "BuggyCars":27.449
+			        "BuggyCars":80.876
 			};
 		</script>
 		

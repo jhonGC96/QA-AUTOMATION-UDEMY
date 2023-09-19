@@ -1,4 +1,4 @@
-@Test
+@Sandbox
 Feature: Test diferent actions on a sandbox page.
 
     Scenario: As a test engineer, i try out different actions on a sandbox page.

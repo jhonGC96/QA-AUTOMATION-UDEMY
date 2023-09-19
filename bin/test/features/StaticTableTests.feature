@@ -1,3 +1,4 @@
+@Table
 Feature: Test diferent actions on the Static Table Page
 
 Rule: The user can return a value from the table and use it.
