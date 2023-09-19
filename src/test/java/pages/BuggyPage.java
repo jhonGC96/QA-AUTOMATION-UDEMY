@@ -19,6 +19,10 @@ public class BuggyPage extends BasePage {
     private String saveButton = "//button[contains(text(),'Save')]";
     private String updateSuccessAlert = "//body/my-app[1]/div[1]/main[1]/my-profile[1]/div[1]/form[1]/div[1]/div[1]/div[2]";
     private String logoutButton = "//a[contains(text(),'Logout')]";
+    private String popularMakeButton = "//body/my-app[1]/div[1]/main[1]/my-home[1]/div[1]/div[1]/div[1]/a[1]/img[1]";
+    private String voteButton = "//button[contains(text(),'Vote!')]";
+    private String textToCheck = "//p[contains(text(),'Thank you for your vote!')]";
+
 
     public BuggyPage (){
         super(driver);
@@ -79,6 +83,23 @@ public class BuggyPage extends BasePage {
 
     public void clickLogout (){
         cliclElement(logoutButton);
+    }
+
+
+    public void clickToPopularMake (){
+        cliclElement(popularMakeButton);
+    }
+
+    public void clickCar (String car) {
+        goToLinkText(car);
+    }
+
+    public void clickVote (){
+        cliclElement(voteButton);
+    }
+
+    public String checkVote (){
+        return textFromElement(textToCheck);
     }
 
 }

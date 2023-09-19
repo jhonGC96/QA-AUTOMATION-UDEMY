@@ -33,7 +33,23 @@ Feature: BuggyCars
 
 
             Examples:
-                | user     | pass     | name  | lastname  | adress   | phone      | hobby   |
-                | jhonGC96 | Prueba1. | juana | hernandez | calle 27 | 5547329394 | Reading |
+                | user     | pass     | name  | lastname  | adress   | phone      | hobby       |
+                | jhonGC96 | Prueba1. | juana | hernandez | calle 27 | 5547329394 | Reading     |
                 | jhonGC96 | Prueba1. | Jhon  | Carreto   | calle 27 | 5547329394 | Video Games |
+
+    Rule: The user only can vote once for a car
+
+        Scenario Outline: As i user i want to vote for the most popular model car
+            And the user fills the credentials form with username <user> and password <pass>
+            And the user goes to click in login button
+            When the user clicks on 'Popular make' option
+            And the user clicks on the car <car> they like the most
+            And the user clicks on button vote!
+            Then the user can see the message 'Thank you for your vote!'
+
+            Examples:
+                | user    | pass     | car                 |
+                | Yanira  | Prueba1. | Guilia Quadrifoglio |
+                | Ward    | Prueba1. | Mito                |
+                | Lorilee | Prueba1. | Giulietta           |
 
