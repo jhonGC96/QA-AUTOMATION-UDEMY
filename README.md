@@ -1,12 +1,18 @@
 # QA-AUTOMATION-UDEMY
 
 Pre-conditions
+
 you must have installed the next tools:
+
 1.- Gradle 8.3
+
 2.- JDK 17
-3.- Gradle extension pack in VSCode or similar
-4.- Selenium plugin in VSCode or similar
-5.- Cucumber plugin in VSCode or similar
+
+3.- Gradle extension pack in VSCode or similar.
+
+4.- Selenium plugin in VSCode or similar.
+
+5.- Cucumber plugin in VSCode or similar.
 
 Excersices with Gradle, Selenium, Cucumber and Java.
 
