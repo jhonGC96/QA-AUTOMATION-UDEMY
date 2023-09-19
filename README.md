@@ -1,6 +1,10 @@
 # QA-AUTOMATION-UDEMY
 
-Pre-conditions
+--- Excersices with Gradle, Selenium, Cucumber and Java. ---
+
+
+--- Pre-conditions ---
+
 
 you must have installed the next tools:
 
@@ -14,9 +18,9 @@ you must have installed the next tools:
 
 5.- Cucumber plugin in VSCode or similar.
 
-Excersices with Gradle, Selenium, Cucumber and Java.
 
 ----- Features automated -----
+
 
 1.- Amazon: add to the cart the third product.
 
@@ -28,7 +32,10 @@ Excersices with Gradle, Selenium, Cucumber and Java.
 
 5.- Table: Validate a static table
 
+
 ----- How to execute -------
+
+
 Amazon.- use the tag '@Amazon'.
 
 BuggyCars.- all case use '@Buggy'.
@@ -39,7 +46,9 @@ Sandbox.- use the tag '@Sandbox'.
 
 Table.- @Table.
 
+
 ---- Example ----
+
 
 if you want to execute 'BuggyCars' follow the next steps:
 
