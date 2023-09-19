@@ -32,7 +32,11 @@ Table.- @Table
 ---- Example ----
 
 if you want to execute 'BuggyCars' follow the next steps:
+
 1.- go to src/test/java/runner/
+
 2.- open file runner.java
+
 3.- in the line number 14 put the next code 'tags = "@Buggy"'
+
 4.- finally you have to save and clic on the button run (execute test).
